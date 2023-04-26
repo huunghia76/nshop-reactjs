@@ -1,0 +1,54 @@
+======================================================================================================
+Tạo component tùy biến
+const Form =  {
+    Input(){
+        return <input  />
+    },
+    Email(){
+        return <input type="email" />
+    },
+    Checkbox(){
+       return <input type="checkbox" />
+    },
+    Password(){
+       return <input type="password" />
+    }
+}
+export default Form; 
+-----------------------
+Cách sử dụng component tùy biến 
+Khai báo thuộc tính
+    const type = 'Checkbox' ; tên function chỉ cần thay đổi ở đây để chuyển thuộc tính nhanh chóng
+    const Input = Form[type];
+Gọi biến mới dưới dạng component
+    <Input></Input> || <Input />
+======================================================================================================
+Tạo component tùy biến thẻ
+
+function Button({title, href, onClick}) {
+    let Component = 'button';
+    const props = {href,onClick} ;
+    if (href) {
+        Component = 'a'
+        props.href = href;
+    }
+    if (onClick) {
+        props.onClick = onClick;
+    }
+    
+    return ( 
+        <Component {...props}>{title}</Component>
+     );
+}
+export default Button;
+-----------------------------------------------------------
+cách sử dụng 
++ Thêm href thì sẽ là thẻ a ngược lại ko href là thẻ button
+<Button    
+    title={'Click me'} 
+    href="https://www.youtube.com/"
+    onClick={() => console.log('sdkj')}
+>
+</Button>
+======================================================================================================
+

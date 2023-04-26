@@ -1,0 +1,18 @@
+@media only screen and (max-width: 560px) {
+    i.fa-facebook {
+        color: blue;
+    }
+    
+    i.fa-youtube {
+        color: red;
+    }
+    
+    i.fa-tiktok {
+        color: black;
+        text-shadow: 1px 3px 2px rgb(253, 166, 180), -1px 3px 2px rgb(0, 255, 238);
+    }
+    
+    i.fa-instagram {
+        color: rgb(255, 0, 191);
+    }
+}

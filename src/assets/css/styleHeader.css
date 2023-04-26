@@ -1,0 +1,109 @@
+.cart-content {
+    width: 375px;
+    height: 100vh;
+    background-color: rgb(234, 234, 243);
+
+}
+
+#cart {
+    display: none;
+
+}
+
+#nshop_header ul li.nav-item {
+    font-weight: 600;
+}
+
+.transform {
+    animation-duration: 1s;
+    animation-name: slidein;
+    animation-iteration-count: 1;
+}
+
+.navbar-toggler:focus {
+    box-shadow: unset !important;
+}
+
+
+
+/* marquee */
+/* .marquee {
+    height: 30px;
+    width: 100%;
+    background-color: rgb(119, 159, 131);
+    color: white;
+    overflow: hidden;
+    position: relative;
+}
+
+.marquee div {
+    display: block;
+    width: 120%;
+    height: 30px;
+
+    position: absolute;
+    overflow: hidden;
+
+    animation: marquee 14s linear infinite;
+}
+
+.marquee span {
+    float: right;
+    width: 100%;
+}
+
+@keyframes marquee {
+    0% {
+        right: -120%;
+    }
+
+    100% {
+        right: -0%;
+    }
+}
+
+@keyframes slidein {
+    from {
+        margin-right: -300%;
+    }
+
+    to {
+        margin-right: 0%;
+    }
+} */
+
+.rightTI {
+    background: rgb(119, 159, 131);
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: marquee2 15s linear infinite;
+}
+.rightTI:hover {
+    animation-play-state: paused;
+  }
+
+.li {
+    width: 100%;
+    height: 30px;
+    padding: 5px 0px;
+    box-shadow: 0 0.01em 0.4em;
+}
+
+@-webkit-keyframes marquee2 {
+    0% {
+        text-indent: 100vw;
+    }
+    100% {
+        text-indent: -100vw;
+    }
+}
+
+@keyframes marquee2 {
+    0% {
+        text-indent: 100vw;
+    }
+    100% {
+        text-indent: -50vw;
+    }
+}
